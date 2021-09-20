@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>user management system</title>
+</head>
+<body>
+      <!-- user management system   -->
+    <section class="user">
+        <h1 class="user__header">User management system</h1>
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>City</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>male</td>
+                    <td>active</td>
+                    <td class="action">
+                        <a href="#" id="update">
+                            <img src="./update.png" alt="update">
+                        </a>
+                        <a href="#" id="delete">
+                            <img src="./x-icon.png" alt="x">
+                        </a>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+<!--  add new user  -->
+      <section class="add-user" id="user">
+          <a href="#">
+              add user
+              <img src="./user.png" alt="img person">
+          </a>
+      </section>
+<!--  add input   -->
+      <section class="form-user" id="form">
+          <form class="needs-validation container" method="post" id="form-send" novalidate>
+              <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                      <label for="validationTooltip01">Name</label>
+                      <input type="text" class="form-control name" id="validationTooltip01" placeholder="First name" value="Mark" required>
+                      <div class="valid-tooltip">
+                          Looks good!
+                      </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                      <label for="validationTooltip02">Email</label>
+                      <input type="email" class="form-control email" id="validationTooltip02" placeholder="Last name" value="Otto" required>
+                      <div class="valid-tooltip">
+                          Looks good!
+                      </div>
+                  </div>
+              </div>
+              <div class="form-row m-2">
+                  <div class="col-md-6 mb-6">
+                      <label for="validationTooltip03">City</label>
+                      <input type="text" class="form-control city" id="validationTooltip03" placeholder="City" required>
+                      <div class="invalid-tooltip">
+                          Please provide a valid city.
+                      </div>
+                  </div>
+                  <div class="col-md-6 mb-6">
+                      <label for="validationTooltip04">Status</label>
+                      <input type="text" class="form-control status" id="validationTooltip04" placeholder="Status" required>
+                      <div class="invalid-tooltip">
+                          Please provide a valid status
+                      </div>
+                  </div>
+              </div>
+              <div class="form-now form-submit">
+                  <div class="col-md-3 mb-6">
+                  <input type="button" type = "submit" class="btn btn-primary" value="Submit form" id="btn">
+              </div>
+              </div>
+
+          </form>
+      </section>
+
+      <script src="script.js"></script>
+</body>
+</html>
