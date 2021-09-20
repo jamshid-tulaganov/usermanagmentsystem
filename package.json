@@ -1,0 +1,17 @@
+{
+  "name": "usermanagmantsystem",
+  "version": "1.0.0",
+  "description": "bu foydalanuvchilar boshqarish uchun xizmat qiladi",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Jamshid_dev_7",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.6"
+  },
+  "devDependencies": {}
+}
