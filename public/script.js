@@ -10,6 +10,7 @@ const formSubmit = document.getElementById('form-send');
 
 formSubmit.addEventListener('click',(evt) => {
     evt.preventDefault();
+    const id = document.querySelector("user-id")
     const name = document.querySelector(".name")
     value;
     const email = document.querySelector(".email").value;
@@ -22,6 +23,7 @@ formSubmit.addEventListener('click',(evt) => {
             'Content-type': 'application/json'
         },
         body: JSON.stringify({
+                id,
                 name,
                 email,
                 city,
@@ -37,4 +39,4 @@ formSubmit.addEventListener('click',(evt) => {
     }).catch((err) =>{
         console.log(err)
     })
-}
+})
